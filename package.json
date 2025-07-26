@@ -1,0 +1,28 @@
+{
+    "name": "@cerana/langchain-gemini",
+    "version": "1.0.6",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist/"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepack": "npm run build"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.24.0",
+        "@langchain/core": "^0.3.49",
+        "uuid": "^11.1.0",
+        "zod": "^3.24.3"
+    },
+    "devDependencies": {
+        "typescript": "^5.8.3"
+    }
+}
